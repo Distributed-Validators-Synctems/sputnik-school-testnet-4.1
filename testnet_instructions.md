@@ -1,4 +1,4 @@
-# Distributes **Validators School Testnet**
+# Distributed **Validators School Testnet**
 
 ## **Quick Links**
 
