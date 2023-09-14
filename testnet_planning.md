@@ -15,7 +15,7 @@ Everything is subject to change and as close as possible to the realities of tes
 
 ## **Phase - 1: Start chain (max 30 points)**
 
-- GenTx Validator Address Submission : `14.09.2023 - 19.09.2023`. Up to `100% of the flow` will be accepted.
+- GenTx Validator Address Submission : `14.09.2023 - 17.09.2023 17:00 UTC`. Up to `100% of the flow` will be accepted.
 
  `25 Points = 25 000 atom for successful wallet submissions.`
 
