@@ -3,13 +3,13 @@
 
 ## Cosmos Hub binaries installation (gaiad)
 
-For the sake of simplicity we decided to use Cosmos Hub service binary. In order to install it please follow steps from this [instruction](https://hub.cosmos.network/main/getting-started/installation.html). It is based on the `v7.0.2` version of `gaiad` binary.
+For the sake of simplicity we decided to use Cosmos Hub service binary. In order to install it please follow steps from this [instruction](https://hub.cosmos.network/main/getting-started/installation.html). It is based on the `v12.0.0` version of `gaiad` binary.
 Please check versiob of used bianry by running this command `gaiad version --long`. You should get big list of text and at the beginig of it you should have following lines:
 ```
 name: gaia
 server_name: gaiad
-version: v7.0.2
-commit: cd27aaaf39cc7819b5164e4baf3fd5aad23ec52a
+version: v12.0.0
+commit: 6f8067d76ce30996f83645862153ccfaf5f13dd1
 build_tags: netgo ledger
 ```
 
@@ -57,7 +57,7 @@ gaiad add-genesis-account <key-name> 1000000000uatom --keyring-backend <os | fil
 # Create the gentx.
 # Note, your gentx will be rejected if you use any amount greater than 1000000000uatom.
 gaiad gentx <key-name> 1000000000uatom --output-document=gentx.json \
-  --chain-id=dvs-protocol-v1 \
+  --chain-id=<current course chain id> \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
