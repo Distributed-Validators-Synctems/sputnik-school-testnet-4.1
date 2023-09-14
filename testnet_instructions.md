@@ -137,7 +137,7 @@ sudo apt install curl -y
 
 To download `genesis.json` file
 ```
-curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-3/master/genesis.json > ~/.gaia/config/genesis.json
+curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-4/master/genesis.json > ~/.gaia/config/genesis.json
 ```
 After downloading you need to verify your `genesis.json` checksum
 
