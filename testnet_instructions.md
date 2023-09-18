@@ -86,8 +86,7 @@ gaiad gentx <key-name> 1000000000uatom \
   --details=<your-node-details> \
   --commission-rate="0.10" \
   --commission-max-rate="0.20" \
-  --commission-max-change-rate="0.01" \
-  --min-self-delegation="1"
+  --commission-max-change-rate="0.01"
 ```
 
 After gentx will be ready you can find it in the `~/.gaiad/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
