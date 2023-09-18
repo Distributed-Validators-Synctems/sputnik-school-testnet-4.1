@@ -169,7 +169,7 @@
     },
     "crisis": {
       "constant_fee": {
-        "denom": "stake",
+        "denom": "uatom",
         "amount": "1000"
       }
     },
@@ -222,7 +222,7 @@
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "stake",
+            "denom": "uatom",
             "amount": "10000000"
           }
         ],
@@ -305,7 +305,7 @@
         "max_reserve_coin_amount": "0",
         "pool_creation_fee": [
           {
-            "denom": "stake",
+            "denom": "uatom",
             "amount": "40000000"
           }
         ],
@@ -323,7 +323,7 @@
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
-        "mint_denom": "stake",
+        "mint_denom": "uatom",
         "inflation_rate_change": "0.130000000000000000",
         "inflation_max": "0.200000000000000000",
         "inflation_min": "0.070000000000000000",
@@ -425,7 +425,7 @@
         "slash_meter_replenish_fraction": "0.05",
         "max_throttled_packets": "100000",
         "consumer_reward_denom_registration_fee": {
-          "denom": "stake",
+          "denom": "uatom",
           "amount": "10000000"
         }
       },
@@ -450,7 +450,7 @@
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
-        "bond_denom": "stake",
+        "bond_denom": "uatom",
         "validator_bond_factor": "-1.000000000000000000",
         "global_liquid_staking_cap": "1.000000000000000000",
         "validator_liquid_staking_cap": "1.000000000000000000"
