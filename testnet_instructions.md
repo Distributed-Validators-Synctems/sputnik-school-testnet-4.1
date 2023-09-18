@@ -6,7 +6,7 @@ Genesis: [https://raw.githubusercontent.com/Distributed-Validators-Synctems/scho
 
 Block explorer: `TBA`
 
-Peers: `2cdad1c9cd0cdffd180695179928e57f4bfbe519@65.109.229.209:26656`
+Peers: `2cdad1c9cd0cdffd180695179928e57f4bfbe519@65.109.229.209:26656,0aaece51c70f806d5d3cdb85371ab2547ada951e@46.8.19.124:26656`
 
 Chain Id: `school-testnet-4`
 
