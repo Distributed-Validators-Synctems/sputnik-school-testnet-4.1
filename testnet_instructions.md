@@ -2,11 +2,11 @@
 
 ## **Quick Links**
 
-Genesis: `TBA`
+Genesis: [https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-4/master/genesis.json](https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-4/master/genesis.json)
 
 Block explorer: `TBA`
 
-Seeds: `TBA`
+Peers: `2cdad1c9cd0cdffd180695179928e57f4bfbe519@65.109.229.209:26656`
 
 Chain Id: `school-testnet-4`
 
@@ -145,7 +145,7 @@ After downloading you need to verify your `genesis.json` checksum
 sha256sum ~/.gaia/config/genesis.json
 ```
 
-you should see `TBA` in the output.
+you should see `25398370173c6b15c8910315a5690d274bf7c4a2c80cfa36b84f7a7135a9002a` in the output.
 
 ### ****Set Up Cosmovisor****
 
