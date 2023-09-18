@@ -147,6 +147,12 @@ sha256sum ~/.gaia/config/genesis.json
 
 you should see `16f4193398f60a06925a35afe89a164b374634a7397c198a3bb55133cdb5fbea` in the output.
 
+Set the peers
+```bash
+PEERS="2cdad1c9cd0cdffd180695179928e57f4bfbe519@65.109.229.209:26656,0aaece51c70f806d5d3cdb85371ab2547ada951e@46.8.19.124:27656,ac1011c6c16cbd2cc8740e302781070da040cc4f@81.0.218.67:26656,4a52836783f21058a09082c9179d1bbe2dddb1e7@185.103.132.18:26656"
+sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.gaia/config/config.toml
+```
+
 ### ****Set Up Cosmovisor****
 
 Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Cosmovisor
