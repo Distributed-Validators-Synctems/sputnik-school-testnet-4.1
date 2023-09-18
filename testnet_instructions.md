@@ -6,7 +6,7 @@ Genesis: [https://raw.githubusercontent.com/Distributed-Validators-Synctems/scho
 
 Block explorer: [https://explorer.vbloher.com/](https://explorer.vbloher.com/school%20testnet%204)
 
-Peers: `2cdad1c9cd0cdffd180695179928e57f4bfbe519@65.109.229.209:26656,0aaece51c70f806d5d3cdb85371ab2547ada951e@46.8.19.124:26656`
+Peers: `2cdad1c9cd0cdffd180695179928e57f4bfbe519@65.109.229.209:26656,0aaece51c70f806d5d3cdb85371ab2547ada951e@46.8.19.124:27656,ac1011c6c16cbd2cc8740e302781070da040cc4f@81.0.218.67:26656`
 
 Chain Id: `school-testnet-4`
 
