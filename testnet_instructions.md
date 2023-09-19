@@ -119,9 +119,9 @@ gaiad tx staking create-validator \
   --commission-rate="0.10" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \
-  --min-self-delegation="1" \
   --gas="auto" \
-  --gas-prices="0.0025uatom" \
+  --gas-adjustment=1.3 \
+  --gas-prices="0.1uatom" \
   --from=<key_name>
 ```
 
