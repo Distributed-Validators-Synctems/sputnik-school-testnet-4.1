@@ -35,7 +35,7 @@ Lead validator team will create a governance proposal on `21.09.2023 13:00 UTC`,
 
 In order to find correct proposal you will need to run query command using your network client binary (`gaiad` in our case). Please issue following command `gaiad query gov proposals`, and find proposal with `title:` ”Vote for me friend”.
 
-**New to governance module?** Read [this](https://docs.cosmos.network/master/modules/gov)
+**New to governance module?** Read [this](https://docs.cosmos.network/main/modules/gov)
 
 **Voting Schedule:**
 
