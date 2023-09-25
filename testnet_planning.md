@@ -40,7 +40,7 @@ In order to find correct proposal you will need to run query command using your 
 **Voting Schedule:**
 
 - Proposal: `Vote for me friend`
-- Voting Period: `21.09.2023 13:00 UTC - 24.10.2023 13:00 UTC`
+- Voting Period: `21.09.2023 13:00 UTC - 24.09.2023 13:00 UTC`
 
 **What should validators do?**
 
