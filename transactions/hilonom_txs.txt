@@ -1,0 +1,16 @@
+Send 1atom to DVS validator
+https://explorer.vbloher.com/school%20testnet%204/tx/EDB4843CC37B4FBE658E24D9958A2D160A77A4BFAFC0E818C4627C51C859B8D6
+
+Delegate some DVS to others and redelegate to DVS validator
+https://explorer.vbloher.com/school%20testnet%204/tx/DFDFCF586E5D53A04260B447E1F5C0DEF3CA109A924F63012666B039E296F9D0
+https://explorer.vbloher.com/school%20testnet%204/tx/4380FFAC445ED7F20AA78086879B3210F736C65A9F8C258D4B160FA23D3EFB1F
+
+Claim reward \ commission and redelegate to DVS validator
+https://explorer.vbloher.com/school%20testnet%204/tx/589945F26E481D242483639263BDC9C7C25E0BC84395225D63A9B770F32B1D02
+
+Tweet url linked in a memo (Come up with something cool to say about DVS Validator School and experience in Testnet)
+https://explorer.vbloher.com/school%20testnet%204/tx/50B2F7C38FC4BF12ED69C6104FA20D4055CC48A090FBE0D6ADA2C0327626AF9F
+
+Send one transaction to two addresses at once and provide txHash
+https://explorer.vbloher.com/school%20testnet%204/tx/22EF07D903C9B5BCDB03F693C60A7377F84CAD697E2049E96E23F416FA75401D
+
