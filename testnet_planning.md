@@ -59,15 +59,19 @@ In order to find correct proposal you will need to run query command using your 
 ## **Phase-3: Transactions (max 30 points)**
 
 - Send 1atom to DVS validator
+
 `5 points =  5000 atom for everyone who do this task.`
 
 - Delegate some DVS to others and redelegate to DVS validator
+
 `5 points =  5000 atom for everyone who do this task.`
 
 - Claim reward \ commission and redelegate to DVS validator
+
 `5 points =  5000 atom for everyone do this task.`
 
 - Tweet url linked in a memo (Come up with something cool to say about DVS Validator School and experience in Testnet)
+
 `5 points =  5000 atom for everyone do this task.`
 
 <aside>
