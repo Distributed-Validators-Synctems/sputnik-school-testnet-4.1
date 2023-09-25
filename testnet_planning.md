@@ -91,7 +91,9 @@ In order to find correct proposal you will need to run query command using your 
     - 70% ≤ uptime ≥ 80%
 
 `20 points =  20000 atom for everyone who have 90+% uptime`
+
 `10 points =  10000 atom for everyone who have 80-90% uptime`
+
 `5 points =  5000 atom for everyone who have 70-80% uptime`
 
 - Never jailed validator :
