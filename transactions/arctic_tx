@@ -1,0 +1,17 @@
+#Send 1atom to DVS validator
+https://explorer.vbloher.com/school%20testnet%204/tx/7D4B48FD58CC74DD3177A53A117B1DD36AFF13EA69028250C5F1B01111D407FF
+
+#Delegate some ATOM to others and redelegate to DVS validator
+https://explorer.vbloher.com/school%20testnet%204/tx/ED15B84888B334BDC0AF1723D55BE928F45FE15D50507EC838D9B0D2ADE27A60
+https://explorer.vbloher.com/school%20testnet%204/tx/F2A18EBB128398AA501EC0E5132BB28DBADEA50421464FB80A97D731DB413750
+
+#Claim reward \ commission and redelegate to DVS validator
+https://explorer.vbloher.com/school%20testnet%204/tx/4B5FDA02EBDB7BA07A7736410CFB9F1C4B5CE89518AEA6665FD94B4C0C2B31A8
+https://explorer.vbloher.com/school%20testnet%204/tx/FB0AFD44BF7683170A1866BA2408A92729C0FB87D6B2AFA97C8BC6FD9235FB07
+https://explorer.vbloher.com/school%20testnet%204/tx/1CC7D18774B2C9766F44C44762EB11CB8A7AC9E38BD4C356AAA6517A2F8E8F6C
+
+#Tweet url linked in a memo
+https://explorer.vbloher.com/school%20testnet%204/tx/4AC2DFD12D7B40EDB72D08FC0681233AFAA493C69F3C3F37F8A10A36E3101EEB
+
+#Send one transaction to two addresses at once
+https://explorer.vbloher.com/school%20testnet%204/tx/9876CB2F877872FD28E70BBF1BEE0F3B47B1B8531696C4C24F50380C91A62BAD
