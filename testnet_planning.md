@@ -33,7 +33,7 @@ Everything is subject to change and as close as possible to the realities of tes
 
 Lead validator team will create a governance proposal on `27.09.2023 13:00 UTC`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
 
-In order to find correct proposal you will need to run query command using your network client binary (`gaiad` in our case). Please issue following command `gaiad query gov proposals`, and find proposal with `title:` ”Vote for me friend”.
+In order to find correct proposal you will need to run query command using your network client binary (`sputnikd` in our case). Please issue following command `sputnikd query gov proposals`, and find proposal with `title:` ”Vote for me friend”.
 
 **New to governance module?** Read [this](https://docs.cosmos.network/main/modules/gov)
 

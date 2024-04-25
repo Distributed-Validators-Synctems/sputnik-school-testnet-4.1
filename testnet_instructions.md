@@ -20,18 +20,18 @@ Here are the minimal hardware configs required for running a validator/sentry no
 
 ## **Software Requirements**
 
-- Ubuntu 20.04+ or Debian 10+
+- Ubuntu 22.04+
 - [Go v1.21+](https://golang.org/doc/install)
 
-## **Install Gaiad, Generate Wallet and Submit GenTx**
+## **Install sputnikd, Generate Wallet and Submit GenTx**
 
-### ****Cosmos Hub binaries installation (gaiad)****
+### ****Sputnik app-chain binaries installation (sputnikd)****
 
-For the sake of simplicity we decided to use Cosmos Hub service binary. In order to install it please follow steps from official Cosmos HUB [instructions](https://hub.cosmos.network/main/getting-started/installation.html). It is based on the `v12.0.0` version of `gaiad` binary. Please check version of used binary by running this command `gaiad version --long`. You should get big list of text and at the beginning of it you should have the following lines:
+For the sake of simplicity we decided to use Cosmos Hub service binary. In order to install it please follow steps from official Cosmos HUB [instructions](https://hub.cosmos.network/main/getting-started/installation.html). It is based on the `v12.0.0` version of `sputnikd` binary. Please check version of used binary by running this command `sputnikd version --long`. You should get big list of text and at the beginning of it you should have the following lines:
 
 ```
 name: gaia
-server_name: gaiad
+server_name: sputnikd
 version: v12.0.0
 commit: 6f8067d76ce30996f83645862153ccfaf5f13dd1
 build_tags: netgo ledger
@@ -41,45 +41,45 @@ build_tags: netgo ledger
 
 ```bash
 cd ~
-gaiad init "<moniker-name>" --chain-id school-testnet-4
+sputnikd init "<moniker-name>" --chain-id school-testnet-4
 ```
 
 example:
 
 ```bash
-gaiad init course-participant-1 --chain-id dvs-course-testnet-4
+sputnikd init course-participant-1 --chain-id dvs-course-testnet-4
 ```
 
 ### **Create Validator Key**
 
 It's very important that after you run this command that you save the seed phrase that is generated. If you do not save you phrase, you will not be able to recover this account.
 
-`gaiad keys add <your validator key name>`
+`sputnikd keys add <your validator key name>`
 
 or restore existing wallet with mnemonic seed phrase. You will be prompted to enter mnemonic seed.
 
-`gaiad keys add <key-name> --recover`
+`sputnikd keys add <key-name> --recover`
 
 or add keys using ledger
 
-`gaiad keys add <key-name> --ledger`
+`sputnikd keys add <key-name> --ledger`
 
 Check your key:
 
-`gaiad keys show <key-name> -a`
+`sputnikd keys show <key-name> -a`
 
 ### ****Create account to genesis****
 
-This command will help you to create account in your local genesis file. It will add funds to your address. Otherwise `gaiad getntx` command will fail because of lack of funds.
+This command will help you to create account in your local genesis file. It will add funds to your address. Otherwise `sputnikd getntx` command will fail because of lack of funds.
 
-`gaiad add-genesis-account <key-name> 1000000000uatom`
+`sputnikd add-genesis-account <key-name> 1000000000uatom`
 
 ### ****Create GenTX****
 
 Create the gentx file. Note, your gentx will be rejected if you use any amount greater than 1000000000uatom.
 
 ```
-gaiad gentx <key-name> 1000000000uatom \
+sputnikd gentx <key-name> 1000000000uatom \
   --chain-id=school-testnet-4 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
@@ -89,7 +89,7 @@ gaiad gentx <key-name> 1000000000uatom \
   --commission-max-change-rate="0.01"
 ```
 
-After gentx will be ready you can find it in the `~/.gaiad/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
+After gentx will be ready you can find it in the `~/.sputnikd/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
 
 In order to upload this file you will need to create fork of this repository. Please click on “Fork” button in the top right corner of this page, and name it somehow or leave repository name unchanged.
 
@@ -110,9 +110,9 @@ Please “Open pull request”, check data, put some description into text box f
 ### Create validator after genesis
 
 ```
-gaiad tx staking create-validator \
+sputnikd tx staking create-validator \
   --amount=1000000000uatom \
-  --pubkey=$(gaiad tendermint show-validator) \
+  --pubkey=$(sputnikd tendermint show-validator) \
   --chain-id=school-testnet-4 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
@@ -166,12 +166,12 @@ mkdir -p ~/.gaia/cosmovisor/upgrades
 echo "" | sed 's/.*/{}/' > ~/.gaia/cosmovisor/genesis/upgrade-info.json
 ```
 
-After directories will be ready please copy `gaiad` binaries created in the “Cosmos Hub binaries installation (gaiad)” section into `~/.gaiad/cosmovisor/genesis/bin` directory. You can do it using next command
+After directories will be ready please copy `sputnikd` binaries created in the “Cosmos Hub binaries installation (sputnikd)” section into `~/.sputnikd/cosmovisor/genesis/bin` directory. You can do it using next command
 ```
-cp ~/go/bin/gaiad ~/.gaia/cosmovisor/genesis/bin/gaiad
+cp ~/go/bin/sputnikd ~/.gaia/cosmovisor/genesis/bin/sputnikd
 ```
 
-### ****Set Up Gaiad Service****
+### ****Set Up sputnikd Service****
 
 Set up a service to allow cosmovisor to run in the background as well as restart automatically if it runs into any problems:
 ```
@@ -179,7 +179,7 @@ echo "[Unit]
 Description=Cosmos Hub daemon
 After=network-online.target
 [Service]
-Environment="DAEMON_NAME=gaiad"
+Environment="DAEMON_NAME=sputnikd"
 Environment="DAEMON_HOME=${HOME}/.gaia"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
@@ -198,24 +198,24 @@ WantedBy=multi-user.target
 
 Move this new file to the systemd directory:
 ```
-sudo mv cosmovisor.service /lib/systemd/system/gaiad.service
+sudo mv cosmovisor.service /lib/systemd/system/sputnikd.service
 ```
 
 And start service:
 ```
 sudo systemctl daemon-reload
-sudo systemctl enable gaiad 
-sudo systemctl restart gaiad
+sudo systemctl enable sputnikd 
+sudo systemctl restart sputnikd
 ```
 
 How you can check the logs
 ```
-sudo journalctl -u gaiad -f
+sudo journalctl -u sputnikd -f
 ```
 
 Set chain-id to `school-testnet-4` (for CLI)
 ```
-gaiad config chain-id school-testnet-4
+sputnikd config chain-id school-testnet-4
 ```
 
 ## **More about validators**
