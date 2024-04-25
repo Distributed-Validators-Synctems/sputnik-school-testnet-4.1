@@ -27,13 +27,14 @@ Here are the minimal hardware configs required for running a validator/sentry no
 
 ### ****Sputnik app-chain binaries installation (sputnikd)****
 
-For the sake of simplicity we decided to use Cosmos Hub service binary. In order to install it please follow steps from official Cosmos HUB [instructions](https://hub.cosmos.network/main/getting-started/installation.html). It is based on the `v12.0.0` version of `sputnikd` binary. Please check version of used binary by running this command `sputnikd version --long`. You should get big list of text and at the beginning of it you should have the following lines:
+Sputnik app testnet binary repo
+https://github.com/Distributed-Validators-Synctems/sputnik-app-chain-practice
 
 ```
-name: gaia
+name: SputnikApp
 server_name: sputnikd
-version: v12.0.0
-commit: 6f8067d76ce30996f83645862153ccfaf5f13dd1
+version: v15.2.0
+commit: 7281c9b9dc4e3087ee87f5b24e416802b52e8661
 build_tags: netgo ledger
 ```
 
@@ -41,7 +42,7 @@ build_tags: netgo ledger
 
 ```bash
 cd ~
-sputnikd init "<moniker-name>" --chain-id school-testnet-4
+sputnikd init "<moniker-name>" --chain-id sputnik-school-testnet
 ```
 
 example:
@@ -80,7 +81,7 @@ Create the gentx file. Note, your gentx will be rejected if you use any amount g
 
 ```
 sputnikd gentx <key-name> 1000000000uatom \
-  --chain-id=school-testnet-4 \
+  --chain-id=sputnik-school-testnet \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
@@ -113,7 +114,7 @@ Please “Open pull request”, check data, put some description into text box f
 sputnikd tx staking create-validator \
   --amount=1000000000uatom \
   --pubkey=$(sputnikd tendermint show-validator) \
-  --chain-id=school-testnet-4 \
+  --chain-id=sputnik-school-testnet \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --commission-rate="0.10" \
@@ -136,7 +137,7 @@ sudo apt install curl -y
 
 To download `genesis.json` file
 ```
-curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/school-testnet-4/master/genesis.json > ~/.gaia/config/genesis.json
+curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/sputnik-school-testnet/master/genesis.json > ~/.gaia/config/genesis.json
 ```
 After downloading you need to verify your `genesis.json` checksum
 
@@ -213,9 +214,9 @@ How you can check the logs
 sudo journalctl -u sputnikd -f
 ```
 
-Set chain-id to `school-testnet-4` (for CLI)
+Set chain-id to `sputnik-school-testnet` (for CLI)
 ```
-sputnikd config chain-id school-testnet-4
+sputnikd config chain-id sputnik-school-testnet
 ```
 
 ## **More about validators**
