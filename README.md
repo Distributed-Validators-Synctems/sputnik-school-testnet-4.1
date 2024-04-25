@@ -3,13 +3,14 @@
 
 ## Sputnik app-chain binaries installation (sputnikd)
 
-For the sake of simplicity we decided to use Cosmos Hub service binary. In order to install it please follow steps from this [instruction](https://hub.cosmos.network/main/getting-started/installation.html). It is based on the `v12.0.0` version of `sputnikd` binary.
-Please check versiob of used bianry by running this command `sputnikd version --long`. You should get big list of text and at the beginig of it you should have following lines:
+Sputnik app testnet binary repo
+https://github.com/Distributed-Validators-Synctems/sputnik-app-chain-practice
+
 ```
-name: gaia
+name: SputnikApp
 server_name: sputnikd
-version: v12.0.0
-commit: 6f8067d76ce30996f83645862153ccfaf5f13dd1
+version: v15.2.0
+commit: 7281c9b9dc4e3087ee87f5b24e416802b52e8661
 build_tags: netgo ledger
 ```
 
