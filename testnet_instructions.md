@@ -122,7 +122,7 @@ sputnikd tx staking create-validator \
   --commission-max-change-rate="0.01" \
   --gas="auto" \
   --gas-adjustment=1.3 \
-  --gas-prices="0.1uatom" \
+  --gas-prices="0.1usignal" \
   --from=<key_name>
 ```
 
