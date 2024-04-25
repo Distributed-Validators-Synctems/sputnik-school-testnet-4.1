@@ -1,7 +1,7 @@
-# Validators School testnet
+# Validators School Sputnik Testnet
 
 
-## Cosmos Hub binaries installation (gaiad)
+## Sputnik app-chain binaries installation (sputnikd)
 
 For the sake of simplicity we decided to use Cosmos Hub service binary. In order to install it please follow steps from this [instruction](https://hub.cosmos.network/main/getting-started/installation.html). It is based on the `v12.0.0` version of `gaiad` binary.
 Please check versiob of used bianry by running this command `gaiad version --long`. You should get big list of text and at the beginig of it you should have following lines:

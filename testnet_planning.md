@@ -10,16 +10,16 @@ Everything is subject to change and as close as possible to the realities of tes
 - Governance proposals
     - Enable Transfers
 - Rewards: `To keep the competitive process going, we see the validators with the most points and they will be rewarded`
-- Schedule: `14.09.2023 - 05.10.2023`
+- Schedule: `25.04.2024 - 03.05.2024`
 - For the Genesis and Celebrate sections please sign a transaction for each of the tasks and provide the txHash in a PR.
 
 ## **Phase - 1: Start chain (max 30 points)**
 
-- GenTx Validator Address Submission : `14.09.2023 - 17.09.2023 17:00 UTC`. Up to `100% of the flow` will be accepted.
+- GenTx Validator Address Submission : `25.04.2023 - 26.04.2023 10:00 UTC`. Up to `100% of the flow` will be accepted.
 
- `25 Points = 25 000 atom for successful wallet submissions.`
+ `25 Points = 25 000 SPUTNIK for successful wallet submissions.`
 
-- Network start time:  `18.09.2023 15:45 UTC`
+- Network start time:  `26.04.2024 16:00 UTC`
 
 `20 Points = 20 000 atom for set up post genesis validators.`
 
@@ -31,7 +31,7 @@ Everything is subject to change and as close as possible to the realities of tes
 
 ## **Phase - 2: Governance (max 30 points)**
 
-Lead validator team will create a governance proposal on `21.09.2023 13:00 UTC`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
+Lead validator team will create a governance proposal on `27.09.2023 13:00 UTC`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
 
 In order to find correct proposal you will need to run query command using your network client binary (`gaiad` in our case). Please issue following command `gaiad query gov proposals`, and find proposal with `title:` ”Vote for me friend”.
 
@@ -40,7 +40,7 @@ In order to find correct proposal you will need to run query command using your 
 **Voting Schedule:**
 
 - Proposal: `Vote for me friend`
-- Voting Period: `21.09.2023 13:00 UTC - 24.09.2023 13:00 UTC`
+- Voting Period: `27.04.2024 13:00 UTC - 28.04.2024 13:00 UTC`
 
 **What should validators do?**
 
