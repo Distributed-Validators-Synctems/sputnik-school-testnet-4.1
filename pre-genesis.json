@@ -66,10 +66,12 @@
           "coins": [
             {
               "denom": "usputnik",
-              "amount": "101000000"
+              "amount": "1001000000"
             }
           ]
         },
+
+
         {
           "address": "sputnik182srt4rz4q43jk60mpnqa2z4yqf07pkz5ej2uj",
           "coins": [
