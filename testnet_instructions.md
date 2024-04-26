@@ -82,7 +82,7 @@ Create the gentx file. Note, your gentx will be rejected if you use any amount g
 
 ```
 sputnikd gentx <key-name> 10000000usputnik \
-  --chain-id=sputnik-school-testnet \
+  --chain-id=sputnik-practice-1 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
