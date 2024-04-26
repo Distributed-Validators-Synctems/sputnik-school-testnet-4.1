@@ -149,7 +149,7 @@ sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.sputnik/
 
 Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Cosmovisor
 ```
-go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.5.0
+go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
 ```
 
 Create the required directories and files
