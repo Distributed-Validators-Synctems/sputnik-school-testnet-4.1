@@ -149,7 +149,7 @@ sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.gaia/con
 
 Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Cosmovisor
 ```
-go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.0.0
+go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.5.0
 ```
 
 Create the required directories and files
@@ -168,7 +168,8 @@ cp ~/go/bin/sputnikd ~/.sputnik/cosmovisor/genesis/bin/sputnikd
 
 Set up a service to allow cosmovisor to run in the background as well as restart automatically if it runs into any problems:
 ```
-echo "[Unit]
+sudo tee /etc/systemd/system/sputnikd.service > /dev/null << EOF
+[Unit]
 Description=Sputnik app chain daemon
 After=network-online.target
 [Service]
@@ -186,12 +187,7 @@ LimitNOFILE=infinity
 LimitNPROC=infinity
 [Install]
 WantedBy=multi-user.target
-" >cosmovisor.service
-```
-
-Move this new file to the systemd directory:
-```
-sudo mv cosmovisor.service /lib/systemd/system/sputnikd.service
+EOF
 ```
 
 And start service:
