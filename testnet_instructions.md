@@ -21,7 +21,7 @@ Here are the minimal hardware configs required for running a validator/sentry no
 ## **Software Requirements**
 
 - Ubuntu 22.04+
-- [Go v1.21+](https://golang.org/doc/install)
+- [Go v1.21](https://golang.org/doc/install)
 
 ## **Install sputnikd, Generate Wallet and Submit GenTx**
 
