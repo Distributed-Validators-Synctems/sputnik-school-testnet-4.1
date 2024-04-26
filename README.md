@@ -49,15 +49,15 @@ sputnikd keys show <key-name> -a
 ### Create account to genesis
 
 ```
-sputnikd add-genesis-account <key-name> 1000000000uatom --keyring-backend <os | file>
+sputnikd add-genesis-account <key-name> 1000000000usputnik --keyring-backend <os | file>
 ```
 
 ### Create GenTX
 
 ```
 # Create the gentx.
-# Note, your gentx will be rejected if you use any amount greater than 1000000000uatom.
-sputnikd gentx <key-name> 1000000000uatom --output-document=gentx.json \
+# Note, your gentx will be rejected if you use any amount greater than 1000000000usputnik.
+sputnikd gentx <key-name> 1000000000usputnik --output-document=gentx.json \
   --chain-id=<current course chain id> \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \

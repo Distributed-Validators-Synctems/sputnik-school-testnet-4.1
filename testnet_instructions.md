@@ -73,14 +73,14 @@ Check your key:
 
 This command will help you to create account in your local genesis file. It will add funds to your address. Otherwise `sputnikd getntx` command will fail because of lack of funds.
 
-`sputnikd add-genesis-account <key-name> 1000000000uatom`
+`sputnikd add-genesis-account <key-name> 1000000000usputnik`
 
 ### ****Create GenTX****
 
-Create the gentx file. Note, your gentx will be rejected if you use any amount greater than 1000000000uatom.
+Create the gentx file. Note, your gentx will be rejected if you use any amount greater than 1000000000usputnik.
 
 ```
-sputnikd gentx <key-name> 1000000000uatom \
+sputnikd gentx <key-name> 1000000000usputnik \
   --chain-id=sputnik-school-testnet \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
@@ -112,7 +112,7 @@ Please “Open pull request”, check data, put some description into text box f
 
 ```
 sputnikd tx staking create-validator \
-  --amount=1000000000uatom \
+  --amount=1000000000usputnik \
   --pubkey=$(sputnikd tendermint show-validator) \
   --chain-id=sputnik-school-testnet \
   --moniker="<moniker-name>" \
@@ -169,7 +169,7 @@ echo "" | sed 's/.*/{}/' > ~/.gaia/cosmovisor/genesis/upgrade-info.json
 
 After directories will be ready please copy `sputnikd` binaries created in the “Cosmos Hub binaries installation (sputnikd)” section into `~/.sputnikd/cosmovisor/genesis/bin` directory. You can do it using next command
 ```
-cp ~/go/bin/sputnikd ~/.gaia/cosmovisor/genesis/bin/sputnikd
+cp ~/go/bin/sputnikd ~/.sputnik/cosmovisor/genesis/bin/sputnikd
 ```
 
 ### ****Set Up sputnikd Service****
@@ -181,7 +181,7 @@ Description=Cosmos Hub daemon
 After=network-online.target
 [Service]
 Environment="DAEMON_NAME=sputnikd"
-Environment="DAEMON_HOME=${HOME}/.gaia"
+Environment="DAEMON_HOME=${HOME}/.sputnik"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
 Environment="DAEMON_LOG_BUFFER_SIZE=512"

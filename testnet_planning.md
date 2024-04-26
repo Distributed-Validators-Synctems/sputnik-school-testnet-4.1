@@ -21,11 +21,11 @@ Everything is subject to change and as close as possible to the realities of tes
 
 - Network start time:  `26.04.2024 16:00 UTC`
 
-`20 Points = 20 000 atom for set up post genesis validators.`
+`20 Points = 20 000 sputnik for set up post genesis validators.`
 
 - Provide peer
 
-`5 points =  5000 atom for everyone who provides a peer.`
+`5 points =  5000 sputnik for everyone who provides a peer.`
 
 ---
 
@@ -46,38 +46,38 @@ In order to find correct proposal you will need to run query command using your 
 
 - Review the parameter change proposal and cast your vote before voting period endtime.
 
-`25 Points = 25 000 atom for successful wallet submissions.`
+`25 Points = 25 000 sputnik for successful wallet submissions.`
 
 **Bonus challenge**
 
 - Make a detailed thread on Twitter about incorrect props, what number you missed, what does it mean and make a PR to the `tweets` directory of this repo.
 
-`5 points =  5000 atom for everyone who provides a tweet url.`
+`5 points =  5000 sputnik for everyone who provides a tweet url.`
 
 ---
 
 ## **Phase-3: Transactions (max 30 points)**
 
-- Send 1atom to DVS validator
+- Send 1sputnik to DVS validator
 
-`5 points =  5000 atom for everyone who do this task.`
+`5 points =  5000 sputnik for everyone who do this task.`
 
 - Delegate some DVS to others and redelegate to DVS validator
 
-`5 points =  5000 atom for everyone who do this task.`
+`5 points =  5000 sputnik for everyone who do this task.`
 
 - Claim reward \ commission and redelegate to DVS validator
 
-`5 points =  5000 atom for everyone do this task.`
+`5 points =  5000 sputnik for everyone do this task.`
 
 - Tweet url linked in a memo (Come up with something cool to say about DVS Validator School and experience in Testnet)
 
-`5 points =  5000 atom for everyone do this task.`
+`5 points =  5000 sputnik for everyone do this task.`
 
 <aside>
 📌 Participants need to raise a PR with the details onto the `transactions` directory of this repo
 
-- Time: `25.09.2023 15:00 UTC - 28.09.2023 15:00 UTC`
+- Time: `29.04.2024 15:00 UTC - 01.05.2024 15:00 UTC`
 (Only the txs in this time period are considered to be valid)
 </aside>
 
@@ -90,23 +90,23 @@ In order to find correct proposal you will need to run query command using your 
     - 80% <= uptime >= 90%
     - 70% ≤ uptime ≥ 80%
 
-`20 points =  20000 atom for everyone who have 90+% uptime`
+`20 points =  20000 sputnik for everyone who have 90+% uptime`
 
-`10 points =  10000 atom for everyone who have 80-90% uptime`
+`10 points =  10000 sputnik for everyone who have 80-90% uptime`
 
-`5 points =  5000 atom for everyone who have 70-80% uptime`
+`5 points =  5000 sputnik for everyone who have 70-80% uptime`
 
 - Never jailed validator :
 
-`20 points =  20000 atom.`
+`20 points =  20000 sputnik.`
 
 - Top - 10 teams/individuals will receive points each for their contributions for the community. technical docs, helping/resolving community issues, etc.
 
-`max 10 points =  10000 atom.`
+`max 10 points =  10000 sputnik.`
 
 - Send one transaction to two addresses at once and provide txHash
 
-`max 5 points =  5000 atom.`
+`max 5 points =  5000 sputnik.`
 
 ## **NOTE:**
 
