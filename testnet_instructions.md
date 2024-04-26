@@ -42,13 +42,13 @@ build_tags: netgo ledger
 
 ```bash
 cd ~
-sputnikd init "<moniker-name>" --chain-id sputnik-school-testnet
+sputnikd init "<moniker-name>" --chain-id sputnik-practice-1
 ```
 
 example:
 
 ```bash
-sputnikd init course-participant-1 --chain-id dvs-course-testnet-4
+sputnikd init course-participant-1 --chain-id dvs-course-testnet
 ```
 
 ### **Create Validator Key**
@@ -90,21 +90,12 @@ sputnikd gentx <key-name> 1000000000usputnik \
   --commission-max-change-rate="0.01"
 ```
 
-After gentx will be ready you can find it in the `~/.sputnikd/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
+After gentx will be ready you can find it in the `~/.sputnik/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
 
 In order to upload this file you will need to create fork of this repository. Please click on “Fork” button in the top right corner of this page, and name it somehow or leave repository name unchanged.
-
-![fork.png](https://raw.githubusercontent.com/kuraassh/school-testnet/master/fork.png)
-
 After that you can upload `gentx` file into appropriate directory of your repository. Next, you will need to create a PR (Pull request) to add changes from your cloned repository into main repository.
-
 Please go into root directory of your repository and click on “Contribute” button.
-
-![contribute.png](https://raw.githubusercontent.com/kuraassh/school-testnet/master/contribute.png)
-
 You will see this popup window.
-
-![popup.png](https://raw.githubusercontent.com/kuraassh/school-testnet/master/popup.png)
 
 Please “Open pull request”, check data, put some description into text box field and click on “Create pull request” inside it. Congratulations you have created your first pull request!
 
@@ -114,7 +105,7 @@ Please “Open pull request”, check data, put some description into text box f
 sputnikd tx staking create-validator \
   --amount=1000000000usputnik \
   --pubkey=$(sputnikd tendermint show-validator) \
-  --chain-id=sputnik-school-testnet \
+  --chain-id=sputnik-practice-1 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --commission-rate="0.10" \
@@ -137,19 +128,19 @@ sudo apt install curl -y
 
 To download `genesis.json` file
 ```
-curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/sputnik-school-testnet/master/genesis.json > ~/.gaia/config/genesis.json
+curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/sputnik-school-testnet/master/genesis.json > ~/.sputnik/config/genesis.json
 ```
 After downloading you need to verify your `genesis.json` checksum
 
 ```
-sha256sum ~/.gaia/config/genesis.json
+sha256sum ~/.sputnik/config/genesis.json
 ```
 
-you should see `16f4193398f60a06925a35afe89a164b374634a7397c198a3bb55133cdb5fbea` in the output.
+you should see `TBD` in the output.
 
 Set the peers
 ```bash
-PEERS="2cdad1c9cd0cdffd180695179928e57f4bfbe519@65.109.229.209:26656,0aaece51c70f806d5d3cdb85371ab2547ada951e@46.8.19.124:27656,ac1011c6c16cbd2cc8740e302781070da040cc4f@81.0.218.67:26656,4a52836783f21058a09082c9179d1bbe2dddb1e7@185.103.132.18:26656"
+PEERS="TDB"
 sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.gaia/config/config.toml
 ```
 
@@ -214,9 +205,9 @@ How you can check the logs
 sudo journalctl -u sputnikd -f
 ```
 
-Set chain-id to `sputnik-school-testnet` (for CLI)
+Set chain-id to `sputnik-practice-1` (for CLI)
 ```
-sputnikd config chain-id sputnik-school-testnet
+sputnikd config chain-id sputnik-practice-1
 ```
 
 ## **More about validators**
