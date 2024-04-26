@@ -137,12 +137,12 @@ After downloading you need to verify your `genesis.json` checksum
 sha256sum ~/.sputnik/config/genesis.json
 ```
 
-you should see `TBD` in the output.
+you should see `c2d417db77ff571d361d89abcefd16ec8e5039fe2fb4576f60a125485ce2f041` in the output.
 
 Set the peers
 ```bash
 PEERS="745870cb265d8c3785da62317d46ecfaf7afa20a@95.217.164.96:26656,db0b3f18280de5ef4cb294912df6a3bf2c1a3f49@95.214.53.164:26656,7413a980948bf2208876d8bb40bb76ea957b1d97@178.215.71.199:26656,d236c62edc593476ad79bb13b028ab80e1c15d3a@128.199.142.104:26656"
-sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.gaia/config/config.toml
+sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.sputnik/config/config.toml
 ```
 
 ### ****Set Up Cosmovisor****
@@ -154,9 +154,9 @@ go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@v1.5.0
 
 Create the required directories and files
 ```
-mkdir -p ~/.gaia/cosmovisor/genesis/bin
-mkdir -p ~/.gaia/cosmovisor/upgrades
-echo "" | sed 's/.*/{}/' > ~/.gaia/cosmovisor/genesis/upgrade-info.json
+mkdir -p ~/.sputnik/cosmovisor/genesis/bin
+mkdir -p ~/.sputnik/cosmovisor/upgrades
+echo "" | sed 's/.*/{}/' > ~/.sputnik/cosmovisor/genesis/upgrade-info.json
 ```
 
 After directories will be ready please copy `sputnikd` binaries created in the “Cosmos Hub binaries installation (sputnikd)” section into `~/.sputnikd/cosmovisor/genesis/bin` directory. You can do it using next command
