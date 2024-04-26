@@ -108,13 +108,13 @@ sputnikd tx staking create-validator \
   --pubkey=$(sputnikd tendermint show-validator) \
   --chain-id=sputnik-practice-1 \
   --moniker="<moniker-name>" \
-  --website=<your-node-website> \
+  --website="<your-node-website>"\
   --commission-rate="0.10" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \
   --gas="auto" \
   --gas-adjustment=1.3 \
-  --gas-prices="0.1usignal" \
+  --gas-prices="0.1usputnik" \
   --from=<key_name>
 ```
 
