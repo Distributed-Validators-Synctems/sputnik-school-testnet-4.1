@@ -103,7 +103,7 @@ Please “Open pull request”, check data, put some description into text box f
 
 ```
 sputnikd tx staking create-validator \
-  --amount=1000000000usputnik \
+  --amount=10000000usputnik \
   --pubkey=$(sputnikd tendermint show-validator) \
   --chain-id=sputnik-practice-1 \
   --moniker="<moniker-name>" \
