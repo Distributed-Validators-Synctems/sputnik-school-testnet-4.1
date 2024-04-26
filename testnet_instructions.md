@@ -2,11 +2,11 @@
 
 ## **Quick Links**
 
-Genesis: TBD
+Genesis: `https://raw.githubusercontent.com/Distributed-Validators-Synctems/sputnik-school-testnet/master/genesis.json`
 
 Block explorer: TBD
 
-Peers: TBD
+Peers: `745870cb265d8c3785da62317d46ecfaf7afa20a@95.217.164.96:26656,db0b3f18280de5ef4cb294912df6a3bf2c1a3f49@95.214.53.164:26656,7413a980948bf2208876d8bb40bb76ea957b1d97@178.215.71.199:26656,d236c62edc593476ad79bb13b028ab80e1c15d3a@128.199.142.104:26656`
 
 Chain Id: `sputnik-practice-1`
 
@@ -31,11 +31,12 @@ Sputnik app testnet binary repo
 https://github.com/Distributed-Validators-Synctems/sputnik-app-chain-practice
 
 ```
-name: SputnikApp
-server_name: sputnikd
-version: v15.2.0
-commit: 7281c9b9dc4e3087ee87f5b24e416802b52e8661
-build_tags: netgo ledger
+commit: d3ed2906478c1558e4be1a2e0f98305f7be46832
+cosmos_sdk_version: v0.47.13-ics-lsm
+go: go version go1.21.9 linux/amd64
+name: sputnik
+server_name: sputnik
+version: main-d3ed2906478c1558e4be1a2e0f98305f7be46832
 ```
 
 ### Network init
@@ -140,7 +141,7 @@ you should see `TBD` in the output.
 
 Set the peers
 ```bash
-PEERS="TDB"
+PEERS="745870cb265d8c3785da62317d46ecfaf7afa20a@95.217.164.96:26656,db0b3f18280de5ef4cb294912df6a3bf2c1a3f49@95.214.53.164:26656,7413a980948bf2208876d8bb40bb76ea957b1d97@178.215.71.199:26656,d236c62edc593476ad79bb13b028ab80e1c15d3a@128.199.142.104:26656"
 sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.gaia/config/config.toml
 ```
 
@@ -168,7 +169,7 @@ cp ~/go/bin/sputnikd ~/.sputnik/cosmovisor/genesis/bin/sputnikd
 Set up a service to allow cosmovisor to run in the background as well as restart automatically if it runs into any problems:
 ```
 echo "[Unit]
-Description=Cosmos Hub daemon
+Description=Sputnik app chain daemon
 After=network-online.target
 [Service]
 Environment="DAEMON_NAME=sputnikd"
