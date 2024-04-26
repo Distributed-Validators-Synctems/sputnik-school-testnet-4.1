@@ -145,6 +145,12 @@ PEERS="745870cb265d8c3785da62317d46ecfaf7afa20a@95.217.164.96:26656,db0b3f18280d
 sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.sputnik/config/config.toml
 ```
 
+Set `minimum-gas-prices` to `.sputnik/config/app.toml`
+```bash
+MIN_GAS_PRICES=0.001usputnik
+sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "'$MIN_GAS_PRICES'"|' $HOME/.sputnik/config/app.toml
+```
+
 ### ****Set Up Cosmovisor****
 
 Set up cosmovisor to ensure any future upgrades happen flawlessly. To install Cosmovisor
@@ -211,7 +217,7 @@ sputnikd config chain-id sputnik-practice-1
 
 Please refer to the Cosmos Hub documentation on validators for a general overview of running a validator. We are using the exact same validator model and software, but with slightly different parameters and other functionality specific to the Cosmic Horizon Network.
 
-- [Run a Validator](https://hub.cosmos.network/main/validators/validator-setup.html)
-- [Validators Overview](https://hub.cosmos.network/main/validators/overview.html)
-- [Validator Security](https://hub.cosmos.network/main/validators/security.html)
-- [Validator FAQ](https://hub.cosmos.network/main/validators/validator-faq.html)
+- [Run a Validator](https://hub.cosmos.network/validators/validator-setup)
+- [Validators Overview](https://hub.cosmos.network/validators/overview)
+- [Validator Security](https://hub.cosmos.network/validators/security)
+- [Validator FAQ](https://hub.cosmos.network/validators/validator-faq)
