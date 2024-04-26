@@ -42,7 +42,98 @@
         "send_enabled": [],
         "default_send_enabled": true
       },
-      "balances": [],
+      "balances": [
+        {
+          "address": "sputnik19jw2mrgmwj67suevq0ru55gaygtxvzjtt94stg",
+          "coins": [
+            {
+              "denom": "usputnik",
+              "amount": "3000000000000"
+            }
+          ]
+        },
+        {
+          "address": "sputnik1sxy7lhpnls5czhqekfwlrury2gu3mk8a0r5yc0",
+          "coins": [
+            {
+              "denom": "usputnik",
+              "amount": "11000000"
+            }
+          ]
+        },
+        {
+          "address": "sputnik19jlzlf66j87se3h56n3y2f3w4f4mk5xv7dnvj9",
+          "coins": [
+            {
+              "denom": "usputnik",
+              "amount": "11000000"
+            }
+          ]
+        },
+        {
+          "address": "sputnik182srt4rz4q43jk60mpnqa2z4yqf07pkz5ej2uj",
+          "coins": [
+            {
+              "denom": "usputnik",
+              "amount": "11000000"
+            }
+          ]
+        },
+        {
+          "address": "sputnik19quygp38u6r9yxnxd03de7c3tew3u9unv4qaa0",
+          "coins": [
+            {
+              "denom": "usputnik",
+              "amount": "11000000"
+            }
+          ]
+        },
+        {
+          "address": "sputnik1adxlv98tncu2cxldv8hd7z78nd4e8ln454wtks",
+          "coins": [
+            {
+              "denom": "usputnik",
+              "amount": "11000000"
+            }
+          ]
+        },
+        {
+          "address": "sputnik1sftzy0q705mgxyps6xp2w5pmxdk8hh5f78zalf",
+          "coins": [
+            {
+              "denom": "usputnik",
+              "amount": "11000000"
+            }
+          ]
+        },
+        {
+          "address": "sputnik142eye7jqahcjtnalle4rgcvuh8suwtjj8qxvd3",
+          "coins": [
+            {
+              "denom": "usputnik",
+              "amount": "11000000"
+            }
+          ]
+        },
+        {
+          "address": "sputnik16hjmsqvlm3f9rxwx59pmhf3x224g4lgdlq8nw5",
+          "coins": [
+            {
+              "denom": "usputnik",
+              "amount": "11000000"
+            }
+          ]
+        },
+        {
+          "address": "sputnik1e5cg8rgm9tgucgam743wqwuyqaf3dg3j9xlghh",
+          "coins": [
+            {
+              "denom": "usputnik",
+              "amount": "11000000"
+            }
+          ]
+        }
+      ],
       "supply": [],
       "denom_metadata": [],
       "send_enabled": []
