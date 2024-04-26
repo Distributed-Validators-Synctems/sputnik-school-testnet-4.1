@@ -77,10 +77,10 @@ This command will help you to create account in your local genesis file. It will
 
 ### ****Create GenTX****
 
-Create the gentx file. Note, your gentx will be rejected if you use any amount greater than 1000000000usputnik.
+Create the gentx file. Note, your gentx will be rejected if you use any amount greater than 10000000usputnik.
 
 ```
-sputnikd gentx <key-name> 1000000000usputnik \
+sputnikd gentx <key-name> 10000000usputnik \
   --chain-id=sputnik-school-testnet \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
