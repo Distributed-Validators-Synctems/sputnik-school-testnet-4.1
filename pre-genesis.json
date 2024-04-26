@@ -32,7 +32,78 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": []
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sputnik19jw2mrgmwj67suevq0ru55gaygtxvzjtt94stg",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sputnik1sxy7lhpnls5czhqekfwlrury2gu3mk8a0r5yc0",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sputnik19jlzlf66j87se3h56n3y2f3w4f4mk5xv7dnvj9",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sputnik182srt4rz4q43jk60mpnqa2z4yqf07pkz5ej2uj",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sputnik19quygp38u6r9yxnxd03de7c3tew3u9unv4qaa0",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sputnik1adxlv98tncu2cxldv8hd7z78nd4e8ln454wtks",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sputnik1sftzy0q705mgxyps6xp2w5pmxdk8hh5f78zalf",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sputnik142eye7jqahcjtnalle4rgcvuh8suwtjj8qxvd3",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sputnik16hjmsqvlm3f9rxwx59pmhf3x224g4lgdlq8nw5",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sputnik1e5cg8rgm9tgucgam743wqwuyqaf3dg3j9xlghh",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        }
+      ]
     },
     "authz": {
       "authorization": []
@@ -70,8 +141,6 @@
             }
           ]
         },
-
-
         {
           "address": "sputnik182srt4rz4q43jk60mpnqa2z4yqf07pkz5ej2uj",
           "coins": [
