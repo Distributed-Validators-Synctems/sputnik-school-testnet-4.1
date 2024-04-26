@@ -137,7 +137,7 @@ After downloading you need to verify your `genesis.json` checksum
 sha256sum ~/.sputnik/config/genesis.json
 ```
 
-you should see `c2d417db77ff571d361d89abcefd16ec8e5039fe2fb4576f60a125485ce2f041` in the output.
+you should see `d416341bd5dd384bb78dc43c0a4413014827c54e82989df9fcc28d3d5df5e8ab` in the output.
 
 Set the peers
 ```bash
