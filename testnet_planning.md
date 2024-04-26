@@ -17,7 +17,7 @@ Everything is subject to change and as close as possible to the realities of tes
 
 - GenTx Validator Address Submission : `25.04.2023 - 26.04.2023 10:00 UTC`. Up to `100% of the flow` will be accepted.
 
- `25 Points = 25 000 SPUTNIK for successful wallet submissions.`
+ `25 Points = 25 000 sputnik for successful wallet submissions.`
 
 - Network start time:  `26.04.2024 16:00 UTC`
 
