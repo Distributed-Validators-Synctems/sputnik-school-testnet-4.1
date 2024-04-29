@@ -162,7 +162,6 @@ Create the required directories and files
 ```
 mkdir -p ~/.sputnik/cosmovisor/genesis/bin
 mkdir -p ~/.sputnik/cosmovisor/upgrades
-echo "" | sed 's/.*/{}/' > ~/.sputnik/cosmovisor/genesis/upgrade-info.json
 ```
 
 After directories will be ready please copy `sputnikd` binaries created in the “Cosmos Hub binaries installation (sputnikd)” section into `~/.sputnikd/cosmovisor/genesis/bin` directory. You can do it using next command
