@@ -77,7 +77,7 @@ In order to find correct proposal you will need to run query command using your 
 <aside>
 📌 Participants need to raise a PR with the details onto the `transactions` directory of this repo
 
-- Time: `29.04.2024 15:00 UTC - 01.05.2024 15:00 UTC`
+- Time: `01.05.2024 15:00 UTC - 03.05.2024 15:00 UTC`
 (Only the txs in this time period are considered to be valid)
 </aside>
 
