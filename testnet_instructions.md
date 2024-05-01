@@ -4,9 +4,9 @@
 
 Genesis: `https://raw.githubusercontent.com/Distributed-Validators-Synctems/sputnik-school-testnet/master/genesis.json`
 
-Block explorer: TBD
+Block explorer: https://sputnik-testnet-explorer.nodejumper.io/sputnik-school-testnet/staking
 
-Peers: `745870cb265d8c3785da62317d46ecfaf7afa20a@95.217.164.96:26656,db0b3f18280de5ef4cb294912df6a3bf2c1a3f49@95.214.53.164:26656,7413a980948bf2208876d8bb40bb76ea957b1d97@178.215.71.199:26656,d236c62edc593476ad79bb13b028ab80e1c15d3a@128.199.142.104:26656`
+Peers: `745870cb265d8c3785da62317d46ecfaf7afa20a@95.217.164.96:26656,db0b3f18280de5ef4cb294912df6a3bf2c1a3f49@95.214.53.164:26656,7413a980948bf2208876d8bb40bb76ea957b1d97@178.215.71.199:26656,d236c62edc593476ad79bb13b028ab80e1c15d3a@128.199.142.104:26656,af6a8ce05b07dadf452fde8c645814c579d06142@88.218.60.250:26656`
 
 Chain Id: `sputnik-practice-1`
 
@@ -141,8 +141,14 @@ you should see `d416341bd5dd384bb78dc43c0a4413014827c54e82989df9fcc28d3d5df5e8ab
 
 Set the peers
 ```bash
-PEERS="745870cb265d8c3785da62317d46ecfaf7afa20a@95.217.164.96:26656,db0b3f18280de5ef4cb294912df6a3bf2c1a3f49@95.214.53.164:26656,7413a980948bf2208876d8bb40bb76ea957b1d97@178.215.71.199:26656,d236c62edc593476ad79bb13b028ab80e1c15d3a@128.199.142.104:26656"
+PEERS="745870cb265d8c3785da62317d46ecfaf7afa20a@95.217.164.96:26656,db0b3f18280de5ef4cb294912df6a3bf2c1a3f49@95.214.53.164:26656,7413a980948bf2208876d8bb40bb76ea957b1d97@178.215.71.199:26656,d236c62edc593476ad79bb13b028ab80e1c15d3a@128.199.142.104:26656,af6a8ce05b07dadf452fde8c645814c579d06142@88.218.60.250:26656"
 sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.sputnik/config/config.toml
+```
+
+Set `minimum-gas-prices` to `.sputnik/config/app.toml`
+```bash
+MIN_GAS_PRICES=0.001usputnik
+sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "'$MIN_GAS_PRICES'"|' $HOME/.sputnik/config/app.toml
 ```
 
 ### ****Set Up Cosmovisor****
@@ -156,7 +162,6 @@ Create the required directories and files
 ```
 mkdir -p ~/.sputnik/cosmovisor/genesis/bin
 mkdir -p ~/.sputnik/cosmovisor/upgrades
-echo "" | sed 's/.*/{}/' > ~/.sputnik/cosmovisor/genesis/upgrade-info.json
 ```
 
 After directories will be ready please copy `sputnikd` binaries created in the “Cosmos Hub binaries installation (sputnikd)” section into `~/.sputnikd/cosmovisor/genesis/bin` directory. You can do it using next command
@@ -211,7 +216,7 @@ sputnikd config chain-id sputnik-practice-1
 
 Please refer to the Cosmos Hub documentation on validators for a general overview of running a validator. We are using the exact same validator model and software, but with slightly different parameters and other functionality specific to the Cosmic Horizon Network.
 
-- [Run a Validator](https://hub.cosmos.network/main/validators/validator-setup.html)
-- [Validators Overview](https://hub.cosmos.network/main/validators/overview.html)
-- [Validator Security](https://hub.cosmos.network/main/validators/security.html)
-- [Validator FAQ](https://hub.cosmos.network/main/validators/validator-faq.html)
+- [Run a Validator](https://hub.cosmos.network/validators/validator-setup)
+- [Validators Overview](https://hub.cosmos.network/validators/overview)
+- [Validator Security](https://hub.cosmos.network/validators/security)
+- [Validator FAQ](https://hub.cosmos.network/validators/validator-faq)
