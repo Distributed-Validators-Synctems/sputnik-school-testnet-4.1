@@ -17,7 +17,7 @@ Everything is subject to change and as close as possible to the realities of tes
 
 - GenTx Validator Address Submission : `25.04.2023 - 26.04.2023 10:00 UTC`. Up to `100% of the flow` will be accepted.
 
- `25 Points = 25 000 SPUTNIK for successful wallet submissions.`
+ `25 Points = 25 000 sputnik for successful wallet submissions.`
 
 - Network start time:  `26.04.2024 16:00 UTC`
 
@@ -31,7 +31,7 @@ Everything is subject to change and as close as possible to the realities of tes
 
 ## **Phase - 2: Governance (max 30 points)**
 
-Lead validator team will create a governance proposal on `27.09.2023 13:00 UTC`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
+Lead validator team will create a governance proposal on `29.04.2024 16:00 UTC`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
 
 In order to find correct proposal you will need to run query command using your network client binary (`sputnikd` in our case). Please issue following command `sputnikd query gov proposals`, and find proposal with `title:` ”Vote for me friend”.
 
@@ -40,7 +40,7 @@ In order to find correct proposal you will need to run query command using your 
 **Voting Schedule:**
 
 - Proposal: `Vote for me friend`
-- Voting Period: `27.04.2024 13:00 UTC - 28.04.2024 13:00 UTC`
+- Voting Period: `29.04.2024 16:00 UTC - 30.04.2024 16:00 UTC`
 
 **What should validators do?**
 
@@ -77,7 +77,7 @@ In order to find correct proposal you will need to run query command using your 
 <aside>
 📌 Participants need to raise a PR with the details onto the `transactions` directory of this repo
 
-- Time: `29.04.2024 15:00 UTC - 01.05.2024 15:00 UTC`
+- Time: `01.05.2024 15:00 UTC - 03.05.2024 15:00 UTC`
 (Only the txs in this time period are considered to be valid)
 </aside>
 

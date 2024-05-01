@@ -7,11 +7,12 @@ Sputnik app testnet binary repo
 https://github.com/Distributed-Validators-Synctems/sputnik-app-chain-practice
 
 ```
-name: SputnikApp
-server_name: sputnikd
-version: v15.2.0
-commit: 7281c9b9dc4e3087ee87f5b24e416802b52e8661
-build_tags: netgo ledger
+commit: d3ed2906478c1558e4be1a2e0f98305f7be46832
+cosmos_sdk_version: v0.47.13-ics-lsm
+go: go version go1.21.9 linux/amd64
+name: sputnik
+server_name: sputnik
+version: main-d3ed2906478c1558e4be1a2e0f98305f7be46832
 ```
 
 ## GenTx generation
@@ -49,15 +50,15 @@ sputnikd keys show <key-name> -a
 ### Create account to genesis
 
 ```
-sputnikd add-genesis-account <key-name> 1000000000usputnik --keyring-backend <os | file>
+sputnikd add-genesis-account <key-name> 10000000usputnik
 ```
 
 ### Create GenTX
 
 ```
 # Create the gentx.
-# Note, your gentx will be rejected if you use any amount greater than 1000000000usputnik.
-sputnikd gentx <key-name> 1000000000usputnik --output-document=gentx.json \
+# Note, your gentx will be rejected if you use any amount greater than 10000000usputnik.
+sputnikd gentx <key-name> 10000000usputnik \
   --chain-id=<current course chain id> \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
@@ -65,6 +66,5 @@ sputnikd gentx <key-name> 1000000000usputnik --output-document=gentx.json \
   --commission-rate="0.10" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \
-  --min-self-delegation="1" \
-  --keyring-backend <os | file>
+  --min-self-delegation="1"
 ```
