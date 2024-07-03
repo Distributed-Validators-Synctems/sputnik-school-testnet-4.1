@@ -60,3 +60,16 @@ sputnikd add-genesis-account <key-name> 10000000usputnik
 # Note, your gentx will be rejected if you use any amount greater than 10000000usputnik.
 sputnikd genesis gentx <key-name> 10000000usputnik --chain-id <current course chain id>
 ```
+
+### Add all accounts to genesis
+
+```
+# Add account addresses of all participants (whose Gentx files you're using to generate genesis) before generating genesis.
+sputnikd add-genesis-account <account-address> 10000000usputnik
+```
+
+### Generate genesis
+
+```
+sputnikd collect-gentxs
+```
