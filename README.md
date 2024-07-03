@@ -58,13 +58,5 @@ sputnikd add-genesis-account <key-name> 10000000usputnik
 ```
 # Create the gentx.
 # Note, your gentx will be rejected if you use any amount greater than 10000000usputnik.
-sputnikd gentx <key-name> 10000000usputnik \
-  --chain-id=<current course chain id> \
-  --moniker="<moniker-name>" \
-  --website=<your-node-website> \
-  --details=<your-node-details> \
-  --commission-rate="0.10" \
-  --commission-max-rate="0.20" \
-  --commission-max-change-rate="0.01" \
-  --min-self-delegation="1"
+sputnikd genesis gentx <key-name> 10000000usputnik --chain-id <current course chain id>
 ```
