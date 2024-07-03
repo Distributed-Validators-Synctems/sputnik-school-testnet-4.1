@@ -50,7 +50,7 @@ sputnikd keys show <key-name> -a
 ### Create account to genesis
 
 ```
-sputnikd add-genesis-account <key-name> 10000000usputnik
+sputnikd genesis add-genesis-account <key-name> 10000000usputnik
 ```
 
 ### Create GenTX
@@ -64,8 +64,9 @@ sputnikd genesis gentx <key-name> 10000000usputnik --chain-id <current course ch
 ### Add all accounts to genesis
 
 ```
-# Add account addresses of all participants (whose Gentx files you're using to generate genesis) before generating genesis.
-sputnikd add-genesis-account <account-address> 10000000usputnik
+# Add account addresses of all participants before generating genesis.
+# (whose Gentx files you're using to generate genesis)
+sputnikd genesis add-genesis-account <account-address> 10000000usputnik
 ```
 
 ### Generate genesis
