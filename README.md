@@ -57,8 +57,16 @@ sputnikd genesis add-genesis-account <key-name> 10000000usputnik
 
 ```
 # Create the gentx.
-# Note, your gentx will be rejected if you use any amount greater than 10000000usputnik.
-sputnikd genesis gentx <key-name> 10000000usputnik --chain-id <current course chain id>
+# Note, your gentx will be rejected if you use any amount greater than 10000000usputnik. (Maybe app will ask to increase stake amount to 100000000usputnik)
+# Make sure that all participants built their gentx files without typos.
+
+sputnikd genesis gentx <key-name> 10000000usputnik \
+  --pubkey=$(sputnikd tendermint show-validator) \
+  --chain-id=<current course chain id> \
+  --moniker="my-moniker" \
+  --commission-rate="0.10" \
+  --commission-max-rate="0.20" \
+  --commission-max-change-rate="0.01"
 ```
 
 ### Add all accounts to genesis
