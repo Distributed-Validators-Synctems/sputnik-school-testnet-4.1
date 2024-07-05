@@ -72,5 +72,11 @@ sputnikd genesis add-genesis-account <account-address> 10000000usputnik
 ### Generate genesis
 
 ```
-sputnikd collect-gentxs
+sputnikd genesis collect-gentxs
+```
+
+### Start network
+
+```
+sputnikd start
 ```
