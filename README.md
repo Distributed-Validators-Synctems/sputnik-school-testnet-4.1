@@ -57,7 +57,8 @@ sputnikd genesis add-genesis-account <key-name> 10000000usputnik
 
 ```
 # Create the gentx.
-# Note, your gentx will be rejected if you use any amount greater than 10000000usputnik. (Maybe app will ask to increase stake amount to 100000000usputnik)
+# Note, your gentx will be rejected if you use any amount greater than 10000000usputnik.
+(Maybe app will ask to increase stake amount to 100000000usputnik)
 # Make sure that all participants built their gentx files without typos.
 
 sputnikd genesis gentx <key-name> 10000000usputnik \
