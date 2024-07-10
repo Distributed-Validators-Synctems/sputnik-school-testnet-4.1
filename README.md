@@ -7,12 +7,12 @@ Sputnik app testnet binary repo
 https://github.com/Distributed-Validators-Synctems/sputnik-app-chain-practice
 
 ```
-commit: d3ed2906478c1558e4be1a2e0f98305f7be46832
+commit: 36b13319c31a74a1fe99ddd9e0cb84341cd7b6e6
 cosmos_sdk_version: v0.47.13-ics-lsm
 go: go version go1.21.9 linux/amd64
 name: sputnik
 server_name: sputnik
-version: main-d3ed2906478c1558e4be1a2e0f98305f7be46832
+version: main-36b13319c31a74a1fe99ddd9e0cb84341cd7b6e6
 ```
 
 ## GenTx generation
