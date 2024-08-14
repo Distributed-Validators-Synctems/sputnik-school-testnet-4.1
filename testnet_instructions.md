@@ -74,7 +74,7 @@ Check your key:
 
 This command will help you to create account in your local genesis file. It will add funds to your address. Otherwise `sputnikd getntx` command will fail because of lack of funds.
 
-`sputnikd add-genesis-account <key-name> 20000000usputnik`
+`sputnikd genesis add-genesis-account <key-name> 20000000usputnik`
 
 ### ****Create GenTX****
 
