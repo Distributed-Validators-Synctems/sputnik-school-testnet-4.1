@@ -2,57 +2,50 @@
 
 ## **Disclaimer**
 
-Everything is subject to change and as close as possible to the realities of testnets that take place in various projects, so at this stage you will learn many useful things in practice. Pay attention to the discord validator announcement channel for announcements. We are testing open source beta software. Expect something to break. If the documentation is not enough or you find some kind of bug, make a PR.
+Everything is subject to change and as close as possible to the realities of testnets that take place in various projects, so at this stage you will learn many useful things in practice. Pay attention to the telegram group for announcements. We are testing open source beta software. Expect something to break. If the documentation is not enough or you find some kind of bug, make a PR.
 
 ## **Overview**
 
 - 3 Phases
 - Governance proposals
     - Enable Transfers
-- Rewards: `To keep the competitive process going, we see the validators with the most points and they will be rewarded`
-- Schedule: `25.04.2024 - 03.05.2024`
-- For the Genesis and Celebrate sections please sign a transaction for each of the tasks and provide the txHash in a PR.
+- Rewards: `To keep the competitive process going, we see the validators with the most points and they will be rewarded.`
+- Schedule: `14.08.2024 - xx.08.2024`
 
 ## **Phase - 1: Start chain (max 30 points)**
 
-- GenTx Validator Address Submission : `25.04.2023 - 26.04.2023 10:00 UTC`. Up to `100% of the flow` will be accepted.
+- GenTx Validator Address Submission : `14.08.2024 - 15.08.2024 10:00 UTC`. Up to `100% of the flow` will be accepted.
 
- `25 Points = 25 000 sputnik for successful wallet submissions.`
+`25 Points = 25 000 sputnik for successful wallet submissions.`
 
-- Network start time:  `26.04.2024 16:00 UTC`
+- Network start time:  `15.08.2024 17:30 UTC`
 
 `20 Points = 20 000 sputnik for set up post genesis validators.`
 
 - Provide peer
 
-`5 points =  5000 sputnik for everyone who provides a peer.`
+`5 points =  5000 sputnik for everyone who provides a peer. You can provide a peer by sending a PR to the `peers` directory of this repo.`
 
 ---
 
 ## **Phase - 2: Governance (max 30 points)**
 
-Lead validator team will create a governance proposal on `29.04.2024 16:00 UTC`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
+Lead validator team will create a governance proposal on `15.08.2024 17:30 UTC`, to update the transfer parameter. You will need to study the proposals, find the correct one and vote.
 
-In order to find correct proposal you will need to run query command using your network client binary (`sputnikd` in our case). Please issue following command `sputnikd query gov proposals`, and find proposal with `title:` ”Vote for me friend”.
+In order to find correct proposal you will need to run query command using your network client binary (`sputnikd` in our case). Please issue following command `sputnikd query gov proposals`, and find proposal with `title:` "Enable transfers".
 
-**New to governance module?** Read [this](https://docs.cosmos.network/main/modules/gov)
+**New to governance module?** Read [this](https://docs.cosmos.network/v0.50/build/modules/gov)
 
 **Voting Schedule:**
 
-- Proposal: `Vote for me friend`
-- Voting Period: `29.04.2024 16:00 UTC - 30.04.2024 16:00 UTC`
+- Proposal: `Enable transfers`
+- Voting Period: `15.08.2024 17:30 UTC - 16.08.2024 17:30 UTC`
 
 **What should validators do?**
 
-- Review the parameter change proposal and cast your vote before voting period endtime.
+- Review the parameter change proposal and cast your vote before voting period end time.
 
-`25 Points = 25 000 sputnik for successful wallet submissions.`
-
-**Bonus challenge**
-
-- Make a detailed thread on Twitter about incorrect props, what number you missed, what does it mean and make a PR to the `tweets` directory of this repo.
-
-`5 points =  5000 sputnik for everyone who provides a tweet url.`
+`10 Points = 10 000 sputnik for successful vote tx.`
 
 ---
 
@@ -62,11 +55,11 @@ In order to find correct proposal you will need to run query command using your 
 
 `5 points =  5000 sputnik for everyone who do this task.`
 
-- Delegate some DVS to others and redelegate to DVS validator
+- Delegate some sputnik to DVS validator
 
 `5 points =  5000 sputnik for everyone who do this task.`
 
-- Claim reward \ commission and redelegate to DVS validator
+- Claim rewards and commission
 
 `5 points =  5000 sputnik for everyone do this task.`
 
@@ -75,9 +68,9 @@ In order to find correct proposal you will need to run query command using your 
 `5 points =  5000 sputnik for everyone do this task.`
 
 <aside>
-📌 Participants need to raise a PR with the details onto the `transactions` directory of this repo
+📌 Participants need to raise a PR with the details into the `transactions` directory of this repo
 
-- Time: `01.05.2024 15:00 UTC - 03.05.2024 15:00 UTC`
+- Time: `xx.08.2024 17:00 UTC - xx.08.2024 17:00 UTC`
 (Only the txs in this time period are considered to be valid)
 </aside>
 
