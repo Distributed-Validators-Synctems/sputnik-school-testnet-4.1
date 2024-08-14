@@ -2,13 +2,13 @@
 
 ## **Quick Links**
 
-Genesis: `https://raw.githubusercontent.com/Distributed-Validators-Synctems/sputnik-school-testnet/master/genesis.json`
+Genesis: `TBD`
 
-Block explorer: https://sputnik-testnet-explorer.nodejumper.io/sputnik-school-testnet/staking
+Block explorer: `TBD`
 
-Peers: `745870cb265d8c3785da62317d46ecfaf7afa20a@95.217.164.96:26656,db0b3f18280de5ef4cb294912df6a3bf2c1a3f49@95.214.53.164:26656,7413a980948bf2208876d8bb40bb76ea957b1d97@178.215.71.199:26656,d236c62edc593476ad79bb13b028ab80e1c15d3a@128.199.142.104:26656,af6a8ce05b07dadf452fde8c645814c579d06142@88.218.60.250:26656,23cecdac3b81632feb8e39d9963080e1412b075f@84.54.44.147:26656,7413a980948bf2208876d8bb40bb76ea957b1d97@178.215.71.199:26656`
+Peers: `TBD`
 
-Chain Id: `sputnik-practice-1`
+Chain Id: `sputnik-testnet-4`
 
 ## **Hardware Requirements**
 
@@ -43,7 +43,7 @@ version: main-d3ed2906478c1558e4be1a2e0f98305f7be46832
 
 ```bash
 cd ~
-sputnikd init "<moniker-name>" --chain-id sputnik-practice-1
+sputnikd init "<moniker-name>" --chain-id sputnik-testnet-4
 ```
 
 example:
@@ -74,7 +74,7 @@ Check your key:
 
 This command will help you to create account in your local genesis file. It will add funds to your address. Otherwise `sputnikd getntx` command will fail because of lack of funds.
 
-`sputnikd add-genesis-account <key-name> 1000000000usputnik`
+`sputnikd add-genesis-account <key-name> 20000000usputnik`
 
 ### ****Create GenTX****
 
@@ -82,7 +82,7 @@ Create the gentx file. Note, your gentx will be rejected if you use any amount g
 
 ```
 sputnikd gentx <key-name> 10000000usputnik \
-  --chain-id=sputnik-practice-1 \
+  --chain-id=sputnik-testnet-4 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
   --details=<your-node-details> \
@@ -106,7 +106,7 @@ Please “Open pull request”, check data, put some description into text box f
 sputnikd tx staking create-validator \
   --amount=10000000usputnik \
   --pubkey=$(sputnikd tendermint show-validator) \
-  --chain-id=sputnik-practice-1 \
+  --chain-id=sputnik-testnet-4 \
   --moniker="<moniker-name>" \
   --website="<your-node-website>"\
   --commission-rate="0.10" \
@@ -129,7 +129,7 @@ sudo apt install curl -y
 
 To download `genesis.json` file
 ```
-curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/sputnik-school-testnet/master/genesis.json > ~/.sputnik/config/genesis.json
+curl TBD > ~/.sputnik/config/genesis.json
 ```
 After downloading you need to verify your `genesis.json` checksum
 
@@ -137,11 +137,11 @@ After downloading you need to verify your `genesis.json` checksum
 sha256sum ~/.sputnik/config/genesis.json
 ```
 
-you should see `d416341bd5dd384bb78dc43c0a4413014827c54e82989df9fcc28d3d5df5e8ab` in the output.
+you should see `TBD` in the output.
 
 Set the peers
 ```bash
-PEERS="745870cb265d8c3785da62317d46ecfaf7afa20a@95.217.164.96:26656,db0b3f18280de5ef4cb294912df6a3bf2c1a3f49@95.214.53.164:26656,7413a980948bf2208876d8bb40bb76ea957b1d97@178.215.71.199:26656,d236c62edc593476ad79bb13b028ab80e1c15d3a@128.199.142.104:26656,af6a8ce05b07dadf452fde8c645814c579d06142@88.218.60.250:26656"
+PEERS=""
 sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.sputnik/config/config.toml
 ```
 
@@ -181,15 +181,14 @@ After=network-online.target
 Environment="DAEMON_NAME=sputnikd"
 Environment="DAEMON_HOME=${HOME}/.sputnik"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
-Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
+Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=true"
 Environment="DAEMON_LOG_BUFFER_SIZE=512"
 Environment="UNSAFE_SKIP_BACKUP=true"
 User=$USER
 ExecStart=${HOME}/go/bin/cosmovisor run start
 Restart=always
-RestartSec=3
-LimitNOFILE=infinity
-LimitNPROC=infinity
+RestartSec=5
+LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
 EOF
@@ -207,9 +206,9 @@ How you can check the logs
 sudo journalctl -u sputnikd -f
 ```
 
-Set chain-id to `sputnik-practice-1` (for CLI)
+Set chain-id to `sputnik-testnet-4` (for CLI)
 ```
-sputnikd config chain-id sputnik-practice-1
+sputnikd config chain-id sputnik-testnet-4
 ```
 
 ## **More about validators**
