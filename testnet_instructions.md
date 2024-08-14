@@ -72,6 +72,24 @@ name: sputnik
 server_name: sputnik
 version: main-d3ed2906478c1558e4be1a2e0f98305f7be46832
 ```
+###  Sputnik installation (gude for begginers)
+```bash
+git clone https://github.com/Distributed-Validators-Synctems/sputnik-app-chain-practice.git
+cd sputnik-app-chain-practice
+make install
+```
+
+Update your .profile to include both global and local Go binaries in your PATH. This ensures that you can easily run Go tools and binaries installed in both /usr/local/go/bin and $HOME/go/bin from any terminal session.
+```bash
+sed -i 's|export PATH=$PATH:/usr/local/go/bin|export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin|' $HOME/.profile
+source .profile
+```
+
+In this step, we'll navigate to the directory containing the binary file and rename it from gaiad to sputnikd since we'll be referring to it by this name in the following instructions.
+```bash
+cd ~/go/bin
+mv gaiad sputnikd
+```
 
 ### Network init
 
