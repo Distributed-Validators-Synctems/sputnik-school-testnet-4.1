@@ -74,14 +74,14 @@ Check your key:
 
 This command will help you to create account in your local genesis file. It will add funds to your address. Otherwise `sputnikd getntx` command will fail because of lack of funds.
 
-`sputnikd genesis add-genesis-account <key-name> 20000000usputnik`
+`sputnikd genesis add-genesis-account <key-name> 20000000stake`
 
 ### ****Create GenTX****
 
-Create the gentx file. Note, your gentx will be rejected if you use any amount greater than 10000000usputnik.
+Create the gentx file. Note, your gentx will be rejected if you use any amount greater than 10000000stake.
 
 ```
-sputnikd gentx <key-name> 10000000usputnik \
+sputnikd gentx <key-name> 10000000stake \
   --chain-id=sputnik-testnet-4 \
   --moniker="<moniker-name>" \
   --website=<your-node-website> \
@@ -104,7 +104,7 @@ Please “Open pull request”, check data, put some description into text box f
 
 ```
 sputnikd tx staking create-validator \
-  --amount=10000000usputnik \
+  --amount=10000000stake \
   --pubkey=$(sputnikd tendermint show-validator) \
   --chain-id=sputnik-testnet-4 \
   --moniker="<moniker-name>" \
@@ -114,7 +114,7 @@ sputnikd tx staking create-validator \
   --commission-max-change-rate="0.01" \
   --gas="auto" \
   --gas-adjustment=1.3 \
-  --gas-prices="0.1usputnik" \
+  --gas-prices="0.1stake" \
   --from=<key_name>
 ```
 
@@ -147,7 +147,7 @@ sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.sputnik/
 
 Set `minimum-gas-prices` to `.sputnik/config/app.toml`
 ```bash
-MIN_GAS_PRICES=0.001usputnik
+MIN_GAS_PRICES=0.001stake
 sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "'$MIN_GAS_PRICES'"|' $HOME/.sputnik/config/app.toml
 ```
 
