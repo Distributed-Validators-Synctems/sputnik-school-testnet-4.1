@@ -81,11 +81,11 @@ This command will help you to create account in your local genesis file. It will
 Create the gentx file. Note, your gentx will be rejected if you use any amount greater than 10000000stake.
 
 ```
-sputnikd gentx <key-name> 10000000stake \
+sputnikd genesis gentx <key-name> 10000000stake \
   --chain-id=sputnik-testnet-4 \
   --moniker="<moniker-name>" \
-  --website=<your-node-website> \
-  --details=<your-node-details> \
+  --website="<your-node-website>" \
+  --details="<your-node-details>" \
   --commission-rate="0.10" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01"
