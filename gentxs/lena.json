@@ -1,0 +1,62 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": "zorra",
+          "identity": "54ECBB9CD7884CBE",
+          "website": "",
+          "security_contact": "",
+          "details": "validator student at validator school"
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.200000000000000000",
+          "max_change_rate": "0.010000000000000000"
+        },
+        "min_self_delegation": "0",
+        "delegator_address": "cosmos17a4y24ul2s89v6up008wrvm324eln0pz9eve60",
+        "validator_address": "cosmosvaloper17a4y24ul2s89v6up008wrvm324eln0pzqdcvku",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "XfypYeJgFKFhUbPAGf3RNm2kCkZMqQ0JkMGkkBnZVCw="
+        },
+        "value": {
+          "denom": "stake",
+          "amount": "10000000"
+        }
+      }
+    ],
+    "memo": "aa11351d5feb6f60521f26de19c8a733e6bbb1dd@116.203.89.243:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.secp256k1.PubKey",
+          "key": "A/lP+oKArsoZF3/bKPUWWBp+MxnjMF0KqyabojbdYrC0"
+        },
+        "mode_info": {
+          "single": {
+            "mode": "SIGN_MODE_DIRECT"
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "200000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": [
+    "4rE8CtWFmtz8VDn3jw3HstHxorU8VRHzSkQt4UkLZKg2lO4w6OqHO5edaSv9ZCwuy6A2JR1i6vYlTv3p3M31IA=="
+  ]
+}
