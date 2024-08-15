@@ -23,6 +23,40 @@ Here are the minimal hardware configs required for running a validator/sentry no
 - Ubuntu 22.04+
 - [Go v1.21](https://golang.org/doc/install)
 
+## **Before start**
+
+Follow these steps to update your server and install some usefull packages:
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install -y make git build-essential jq mc btop
+```
+
+## **Install GO v1.21.13**
+
+Download the Go 1.21.13 binary archive using wget:
+
+```bash
+wget https://go.dev/dl/go1.21.13.linux-amd64.tar.gz
+```
+If you have a previous installation of Go, remove it to avoid conflicts:
+
+```bash
+rm -rf /usr/local/go  
+```
+Extract the downloaded archive to /usr/local:
+```bash
+sudo tar -C /usr/local -xzf go1.21.13.linux-amd64.tar.gz
+```
+Use the following command to append the Go path to the end of your .profile file:
+```bash
+echo 'export PATH=$PATH:/usr/local/go/bin' >> .profile
+source .profile
+```
+
+
+
 ## **Install sputnikd, Generate Wallet and Submit GenTx**
 
 ### ****Sputnik app-chain binaries installation (sputnikd)****
@@ -37,6 +71,24 @@ go: go version go1.21.9 linux/amd64
 name: sputnik
 server_name: sputnik
 version: main-d3ed2906478c1558e4be1a2e0f98305f7be46832
+```
+###  Sputnik installation (gude for begginers)
+```bash
+git clone https://github.com/Distributed-Validators-Synctems/sputnik-app-chain-practice.git
+cd sputnik-app-chain-practice
+make install
+```
+
+Update your .profile to include both global and local Go binaries in your PATH. This ensures that you can easily run Go tools and binaries installed in both /usr/local/go/bin and $HOME/go/bin from any terminal session.
+```bash
+sed -i 's|export PATH=$PATH:/usr/local/go/bin|export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin|' $HOME/.profile
+source .profile
+```
+
+In this step, we'll navigate to the directory containing the binary file and rename it from gaiad to sputnikd since we'll be referring to it by this name in the following instructions.
+```bash
+cd ~/go/bin
+mv gaiad sputnikd
 ```
 
 ### Network init
