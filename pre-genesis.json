@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2024-08-50T17:30:00Z",
+  "genesis_time": "2024-08-15T17:50:00Z",
   "chain_id": "sputnik-testnet-4",
   "initial_height": "1",
   "consensus_params": {
