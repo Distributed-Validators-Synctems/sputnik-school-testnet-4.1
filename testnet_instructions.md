@@ -2,7 +2,7 @@
 
 ## **Quick Links**
 
-Genesis: `TBD`
+Genesis: `https://raw.githubusercontent.com/Distributed-Validators-Synctems/sputnik-school-testnet-4.1/master/genesis.json`
 
 Block explorer: `TBD`
 
@@ -143,7 +143,7 @@ sputnikd genesis gentx <key-name> 10000000stake \
   --commission-max-change-rate="0.01"
 ```
 
-After gentx will be ready you can find it in the `~/.sputnik/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
+After gentx will be ready you can find it in the `~/.gaia/config/gentx` directory. After that you will be required to upload it into `gentxs` directory of this repository. Please name it using following template `gentx-<validator name>.json`.
 
 In order to upload this file you will need to create fork of this repository. Please click on “Fork” button in the top right corner of this page, and name it somehow or leave repository name unchanged.
 After that you can upload `gentx` file into appropriate directory of your repository. Next, you will need to create a PR (Pull request) to add changes from your cloned repository into main repository.
@@ -181,26 +181,26 @@ sudo apt install curl -y
 
 To download `genesis.json` file
 ```
-curl TBD > ~/.sputnik/config/genesis.json
+curl https://raw.githubusercontent.com/Distributed-Validators-Synctems/sputnik-school-testnet-4.1/master/genesis.json > ~/.gaia/config/genesis.json
 ```
 After downloading you need to verify your `genesis.json` checksum
 
 ```
-sha256sum ~/.sputnik/config/genesis.json
+sha256sum ~/.gaia/config/genesis.json
 ```
 
-you should see `TBD` in the output.
+you should see `d088d19e2a3f885b2a5c7bcd71b0e26f590041e6639ce5ab9e8fc9b71d5952b9` in the output.
 
 Set the peers
 ```bash
 PEERS=""
-sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.sputnik/config/config.toml
+sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.gaia/config/config.toml
 ```
 
-Set `minimum-gas-prices` to `.sputnik/config/app.toml`
+Set `minimum-gas-prices` to `.gaia/config/app.toml`
 ```bash
 MIN_GAS_PRICES=0.001stake
-sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "'$MIN_GAS_PRICES'"|' $HOME/.sputnik/config/app.toml
+sed -i 's|^minimum-gas-prices *=.*|minimum-gas-prices = "'$MIN_GAS_PRICES'"|' $HOME/.gaia/config/app.toml
 ```
 
 ### ****Set Up Cosmovisor****
@@ -212,13 +212,13 @@ go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
 
 Create the required directories and files
 ```
-mkdir -p ~/.sputnik/cosmovisor/genesis/bin
-mkdir -p ~/.sputnik/cosmovisor/upgrades
+mkdir -p ~/.gaia/cosmovisor/genesis/bin
+mkdir -p ~/.gaia/cosmovisor/upgrades
 ```
 
-After directories will be ready please copy `sputnikd` binaries created in the “Cosmos Hub binaries installation (sputnikd)” section into `~/.sputnikd/cosmovisor/genesis/bin` directory. You can do it using next command
+After directories will be ready please copy `sputnikd` binaries created in the “Cosmos Hub binaries installation (sputnikd)” section into `~/.gaiad/cosmovisor/genesis/bin` directory. You can do it using next command
 ```
-cp ~/go/bin/sputnikd ~/.sputnik/cosmovisor/genesis/bin/sputnikd
+cp ~/go/bin/sputnikd ~/.gaia/cosmovisor/genesis/bin/sputnikd
 ```
 
 ### ****Set Up sputnikd Service****
@@ -231,7 +231,7 @@ Description=Sputnik app chain daemon
 After=network-online.target
 [Service]
 Environment="DAEMON_NAME=sputnikd"
-Environment="DAEMON_HOME=${HOME}/.sputnik"
+Environment="DAEMON_HOME=${HOME}/.gaia"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=true"
 Environment="DAEMON_LOG_BUFFER_SIZE=512"
