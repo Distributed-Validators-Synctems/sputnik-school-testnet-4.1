@@ -193,8 +193,8 @@ you should see `d088d19e2a3f885b2a5c7bcd71b0e26f590041e6639ce5ab9e8fc9b71d5952b9
 
 Set the peers
 ```bash
-PEERS=""
-sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.gaia/config/config.toml
+SEEDS="71a7be5906fc2fb1d78263e61a0ca7585cb6e621@167.235.250.120:26656"
+sed -i 's|^seeds *=.*|seeds = "'SEEDS'"|' $HOME/.gaia/config/config.toml
 ```
 
 Set `minimum-gas-prices` to `.gaia/config/app.toml`
