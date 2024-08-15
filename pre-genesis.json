@@ -102,6 +102,13 @@
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "cosmos1w5jvd2t0c5f4vaplftwwnqmgj27n2xa37us06y",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
         }
       ]
     },
@@ -196,6 +203,15 @@
           ]
         },
         {
+          "address": "cosmos1w5jvd2t0c5f4vaplftwwnqmgj27n2xa37us06y",
+          "coins": [
+            {
+              "denom": "stake",
+              "amount": "20000000"
+            }
+          ]
+        },
+        {
           "address": "cosmos1fn2uvj2txmk7nxz9mzdneum9n47sr9dqg4pg5a",
           "coins": [
             {
@@ -208,7 +224,7 @@
       "supply": [
         {
           "denom": "stake",
-          "amount": "2000180000000"
+          "amount": "2000200000000"
         }
       ],
       "denom_metadata": [],
@@ -561,7 +577,7 @@
       "port_id": "transfer",
       "denom_traces": [],
       "params": {
-        "send_enabled": false,
+        "send_enabled": true,
         "receive_enabled": true
       },
       "total_escrowed": []
