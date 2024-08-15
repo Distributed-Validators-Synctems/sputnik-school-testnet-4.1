@@ -205,7 +205,12 @@
           ]
         }
       ],
-      "supply": [],
+      "supply": [
+        {
+          "denom": "stake",
+          "amount": "2000180000000"
+        }
+      ],
       "denom_metadata": [],
       "send_enabled": []
     },
