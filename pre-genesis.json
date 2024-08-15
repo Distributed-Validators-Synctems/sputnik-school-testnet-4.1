@@ -252,6 +252,30 @@
       "registered_counterparty_payees": [],
       "forward_relayers": []
     },
+    "feemarket": {
+      "params": {
+        "alpha": "0.000000000000000000",
+        "beta": "1.000000000000000000",
+        "gamma": "0.000000000000000000",
+        "delta": "0.000000000000000000",
+        "min_base_gas_price": "1.000000000000000000",
+        "min_learning_rate": "0.125000000000000000",
+        "max_learning_rate": "0.125000000000000000",
+        "max_block_utilization": "30000000",
+        "window": "1",
+        "fee_denom": "stake",
+        "enabled": true,
+        "distribute_fees": false
+      },
+      "state": {
+        "base_gas_price": "1.000000000000000000",
+        "learning_rate": "0.125000000000000000",
+        "window": [
+          "0"
+        ],
+        "index": "0"
+      }
+    },
     "genutil": {
       "gen_txs": []
     },
@@ -289,6 +313,14 @@
         "threshold": "0.500000000000000000",
         "veto_threshold": "0.334000000000000000",
         "min_initial_deposit_ratio": "0.000000000000000000",
+        "expedited_voting_period": "86400s",
+        "expedited_threshold": "0.667000000000000000",
+        "expedited_min_deposit": [
+          {
+            "denom": "stake",
+            "amount": "50000000"
+          }
+        ],
         "burn_vote_quorum": false,
         "burn_proposal_deposit_prevote": false,
         "burn_vote_veto": true,
@@ -463,7 +495,8 @@
           "denom": "stake",
           "amount": "10000000"
         },
-        "blocks_per_epoch": "600"
+        "blocks_per_epoch": "600",
+        "number_of_epochs_to_start_receiving_rewards": "0"
       },
       "validator_consumer_pubkeys": [],
       "validators_by_consumer_addr": [],
@@ -529,6 +562,18 @@
       "total_escrowed": []
     },
     "upgrade": {},
-    "vesting": {}
+    "vesting": {},
+    "wasm": {
+      "params": {
+        "code_upload_access": {
+          "permission": "Everybody",
+          "addresses": []
+        },
+        "instantiate_default_permission": "Everybody"
+      },
+      "codes": [],
+      "contracts": [],
+      "sequences": []
+    }
   }
 }
