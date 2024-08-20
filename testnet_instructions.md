@@ -4,7 +4,7 @@
 
 Genesis: `https://raw.githubusercontent.com/Distributed-Validators-Synctems/sputnik-school-testnet-4.1/master/genesis.json`
 
-Block explorer: `TBD`
+Block explorer: `https://sputnik-testnet-4.nodejumper.io/sputnik-testnet-4`
 
 Peers: `TBD`
 
