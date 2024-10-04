@@ -1,1 +1,62 @@
-{"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator","description":{"moniker":"ChainTrails","identity":"BFFA6EBC415E7D9B","website":"https://www.chaintrails.io","security_contact":"","details":"Independent Platform Contributors 🤖 🖧.."},"commission":{"rate":"0.100000000000000000","max_rate":"0.200000000000000000","max_change_rate":"0.010000000000000000"},"min_self_delegation":"0","delegator_address":"cosmos1tpx8c5qzfm9sxyzulmzexfzj29gta3ms9njd8r","validator_address":"cosmosvaloper1tpx8c5qzfm9sxyzulmzexfzj29gta3msq8xcts","pubkey":{"@type":"/cosmos.crypto.ed25519.PubKey","key":"vd0D51BZ8qWJdVm+LGWuYtSeK4O+nF/lQPFBp4ePA30="},"value":{"denom":"stake","amount":"10000000"}}],"memo":"362b27611ef0ac2c18ab0683a2adac51a51e5130@95.214.55.16:26656","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AnqU16OT++6qXk6sFOE7DUx7wALsiFRJWEVv2krLzfaR"},"mode_info":{"single":{"mode":"SIGN_MODE_DIRECT"}},"sequence":"0"}],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""},"tip":null},"signatures":["wEOQlXzI8Rzie6Rie9JyOBxSd6Zm1Vo78IA8J0Xv9UEIrXCmW8NYOGrlDVfTTeEpG2Bz0AhjHj1wuShtStZ4eQ=="]}
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": "ChainTrails",
+          "identity": "BFFA6EBC415E7D9B",
+          "website": "https://www.chaintrails.io",
+          "security_contact": "",
+          "details": "Independent Platform Contributors 🤖 🖧.."
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.200000000000000000",
+          "max_change_rate": "0.010000000000000000"
+        },
+        "min_self_delegation": "0",
+        "delegator_address": "cosmos1tpx8c5qzfm9sxyzulmzexfzj29gta3ms9njd8r",
+        "validator_address": "cosmosvaloper1tpx8c5qzfm9sxyzulmzexfzj29gta3msq8xcts",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "vd0D51BZ8qWJdVm+LGWuYtSeK4O+nF/lQPFBp4ePA30="
+        },
+        "value": {
+          "denom": "stake",
+          "amount": "10000000"
+        }
+      }
+    ],
+    "memo": "362b27611ef0ac2c18ab0683a2adac51a51e5130@95.214.55.16:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.secp256k1.PubKey",
+          "key": "AnqU16OT++6qXk6sFOE7DUx7wALsiFRJWEVv2krLzfaR"
+        },
+        "mode_info": {
+          "single": {
+            "mode": "SIGN_MODE_DIRECT"
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "200000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": [
+    "wEOQlXzI8Rzie6Rie9JyOBxSd6Zm1Vo78IA8J0Xv9UEIrXCmW8NYOGrlDVfTTeEpG2Bz0AhjHj1wuShtStZ4eQ=="
+  ]
+}
